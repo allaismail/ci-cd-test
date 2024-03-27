@@ -39,7 +39,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build Docker image
-        run: docker build -t https://hub.docker.com/u/allaismail/ci-cd:latest .
+        run: docker build -t allaismail/ci-cd:latest .
 
       - name: Push Docker image
-        run: docker push https://hub.docker.com/u/allaismail/ci-cd:latest
+        run: docker push allaismail/ci-cd:latest

@@ -1,4 +1,3 @@
-# test_hello.py
 import unittest
 from app import add, subtract
 
